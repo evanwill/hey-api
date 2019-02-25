@@ -1,0 +1,47 @@
+# workshop-template-b, evanwill
+# https://github.com/evanwill/workshop-template-b
+# A Jekyll template for a simple workshop website
+
+# Site settings
+# title appears in the header
+title: Hey API!
+# title-icon appears in the header to give some pizazz (leave blank for none)
+# choose from Font Awesome 5 free, https://fontawesome.com/icons?d=gallery&m=free
+# some options: fas fa-wrench; fas fa-cogs; fas fa-code; fas fa-chalkboard-teacher; fas fa-book-open
+title-icon: fas external-link-alt 
+# description and keywords for meta tags
+description: "Introduction to Using Web APIs"
+keywords: "workshop, api"
+
+# author settings for cc-by, appears in the footer
+author: evan will
+pub_year: 2019
+github_username: evanwill
+
+# add the full url for the github repository
+repo: "https://github.com/evanwill/hey-api"
+
+# site urls
+# add the url for the domain,
+# on gh-pages follow the pattern: https://username.github.io 
+url: https://evanwill.github.io
+# add subsection of the domain,
+# on gh-pages this is a / followed by the name of the repository
+baseurl: /hey-api
+
+# add search box to footer?
+search: true
+
+# add google analytics if desired (optional)
+# if blank, it will be ignored
+# use JEKYLL_ENV=production on build command
+google_analytics: 
+
+# defaults (to simplify front matter)
+defaults:
+  - scope:
+      path: "content"
+    values:
+      layout: "default"
+# Build settings
+markdown: kramdown

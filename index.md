@@ -1,4 +1,11 @@
-# hey-api
+---
+title: Home
+layout: default
+---
+
+# Hey API!
+
+{% include figure.html img="jordan-harrison-1208586-unsplash.jpg" alt="ethernet cables" width="75%" %}
 
 Introduction to Using Web APIs
 
@@ -9,3 +16,10 @@ We will learn how to construct queries as HTTP GET and POST requests to retrieve
 
 No programming experience is necessary.
 
+{% include toc.html %}
+
+Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
+
+------
+
+{% include credits.html %}
