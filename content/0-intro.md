@@ -5,21 +5,23 @@ nav: true
 
 # Web APIs
 
-Application Program Interface (API)
+Web Application Program Interfaces (APIs) are defined methods designed to make interaction with a server easier--think of them as recipes or contracts.
+They provide an abstract way to interact with a server from outside using a web protocol (http) to request or submit data.
 
-recipes / contract / defined methods designed to make interaction with a server easier 
+This layer of abstraction is important because:
 
-abstract way to interact with a server from outside using a web protocol (http) to get or submit data
+- you can use any means to make the request if it follows a standard protocol (http)
+- you don't need to know the details about how the server works or how the data is stored
+- the server can use any means to respond
 
-this way you don't need to know the details about how the server works or the data is stored,
-you can use any means to write the request,
-server can use any means to respond,
-but you communicate in a standardized way.
-this allows the details of the user and the server to completely change without breaking the functionality.
+**If you communicate in the standardized way defined by the API, it allows the details of both the user and the server to completely change without breaking the functionality.**
+
+plug in picture
 
 [REST api](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
-other APIs 
+Other APIs
+
 - programming languages / libraries ([jQuery API](https://api.jquery.com/)
 - Operating systems (POSIX, WinAPI)
 - software features (browser api)
