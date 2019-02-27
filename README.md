@@ -1,6 +1,6 @@
 # hey-api
 
-Introduction to Using Web APIs
+Introduction to Using Web APIs, https://evanwill.github.io/hey-api/
 
 Many websites provide Application Programming Interfaces (APIs) that allow users to access data and services via simple web queries.
 For example, you might want to retrieve a historic image, harvest the latest tweets, or run sentiment analysis on a text.
@@ -9,3 +9,4 @@ We will learn how to construct queries as HTTP GET and POST requests to retrieve
 
 No programming experience is necessary.
 
+CC-BY-SA [evan will](https://github.com/evanwill/) 2019
