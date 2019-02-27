@@ -11,10 +11,16 @@ With GET requests, your query is encoded in the URL string, thus limited in leng
 We can demo using these APIs simply by constructing the URL following the recipe, then pasting it into a web browser. 
 However, combining these methods with a scripting language such as Python or tool such as OpenRefine can make them very powerful.
 
-For example, let's say you had a list of IDs for YouTube videos. 
-You can use the YouTube img API to get thumbnails.
-Plug each ID, such as `SWVjQsvQocA`, into the URL pattern `https://img.youtube.com/vi/` + ID + `/maxresdefault.jpg` (try `/0.jpg` through `/3.jpg`), so it looks like `https://img.youtube.com/vi/SWVjQsvQocA/maxresdefault.jpg`.
-Use your scripting language or OpenRefine to follow the pattern with each ID and request the thumbnails as a batch.
+{% capture example %}
+Let's say you had a list of IDs for a set of YouTube videos. 
+You can use the YouTube img API to get thumbnails (this is no longer officially documented and is replaced by the more complicated [YouTube Data API](https://developers.google.com/youtube/v3/)).
+
+Plug each ID into the URL pattern `https://img.youtube.com/vi/` + ID + `/0.jpg`.
+For example, the ID `SWVjQsvQocA`, will look like `https://img.youtube.com/vi/SWVjQsvQocA/0.jpg`.
+Also, try other format options `/0.jpg` through `/3.jpg`, `/hqdefault.jpg`, `/mqdefault.jpg`, and `/maxresdefault.jpg` for different sizes and thumbs.
+Use your scripting language or OpenRefine to build the pattern with each ID and request the thumbnails as a batch.
+{% endcapture %}
+{% include card.md text=example title="For Example..." %}
 
 APIs should be well documented, otherwise its not a very good api...
 In addition to formal documentation provided by the service, information about alternative formats and search API are sometimes given in the `<head>` element of a web page. 
@@ -23,7 +29,7 @@ Check for `<link rel="alternate"`, `<link rel="search"`, or `<!--` comments whic
 # IIIF
 
 [International Image Interoperability Framework (IIIF)](https://iiif.io/) is an effort to standardize methods to access images and annotations from repositories.
-The API standard was created by a collaborative community so that software developers can create compliant viewers and image servers, enabling better user and developer experiences.
+The API standard was created by a collaborative community so that software developers can create compliant viewers and image servers, enabling better user and developer experiences across many platforms.
 
 Let's look at the [IIIF Image API](https://iiif.io/api/image/2.1/) to learn how to request an image. 
 
@@ -34,6 +40,16 @@ IIIF URI syntax looks like:
 Each parameter has standard options or syntax, gradually building up the exact specifications of the image you want.
 
 For example, let's use IIIF to access images from the [Psychiana](https://digital.lib.uidaho.edu/digital/collection/psychiana/search) digital collection hosted on [CONTENTdm](https://www.oclc.org/en/contentdm.html).
+
+Parts of the recipe:
+
+- Our IIIF service is at the base URL `https://cdm17254.contentdm.oclc.org/digital/iiif`
+- The collection name is the "prefix", `/psychiana`
+- One item, ["Photograph of clerical and bookkeeping staff from the branch mailing department"](https://digital.lib.uidaho.edu/digital/collection/psychiana/id/548/rec/1), has the "identifier", `548`
+
+First, get image info: 
+
+`https://cdm17254.contentdm.oclc.org/digital/iiif/psychiana/548/info.json`
 
 Get max size:
 
@@ -47,14 +63,11 @@ Get a cropped region:
 
 `https://cdm17254.contentdm.oclc.org/digital/iiif/psychiana/548/125,125,250,250/max/0/default.jpg`
 
-Get image info: 
-
-`https://cdm17254.contentdm.oclc.org/digital/iiif/psychiana/548/info.json`
-
 # Chronicling America
 
 The [Chronicling America](https://chroniclingamerica.loc.gov/) project provides access to millions of pages of digitized historic newspapers.
 It also includes a simple, open API to interact with the repository programmatically.
+Unlike the IIIF which is a standard, this API is custom built into the repository system and is used by its own web pages to retrieve data.
 Read the [documentation](https://chroniclingamerica.loc.gov/about/api/) to learn how to build URL queries.
 
 To search individual pages, the recipe is:
@@ -88,3 +101,4 @@ The service may still be free, the key is just used to avoid spamming and over u
 - [Google Maps APIs](https://developers.google.com/maps/documentation/api-picker)
 - [Twitter API](https://developer.twitter.com/en/docs)
 - [NYTimes API](https://developer.nytimes.com/)
+- [oEmbed](https://oembed.com/) standard
