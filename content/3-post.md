@@ -19,6 +19,7 @@ For testing, one of the best options is the command line tool [curl](https://cur
 - POST with data: `curl -d "example stuff" https://example.com` (by default sent as "Content-Type: application/x-www-form-urlencoded")
 - POST with headers: `curl -d '{"key":"value"}' -H 'Content-Type: application/json' -X POST https://example.com`
 - POST using data file: `curl -d "@example.json" -X POST https://example.com`
+- Send output to a file: `curl https://www.uidaho.edu > test.txt`
 - [curl POST docs](https://ec.haxx.se/http-post.html)
 {% endcapture %}
 {% include card.md header="curl Reference" text=demo %}
