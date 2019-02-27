@@ -92,3 +92,14 @@ Combine the parameters with `&` and let's see what we get:
 After retrieving a batch of data, we could parse the JSON to analyse or use it to form a new batch of queries.
 
 {% include alert.md text="If ChronAm seems interesting, try out the [Library of Congress JSON API](https://libraryofcongress.github.io/data-exploration/index.html) or [LOC IIIF API](https://github.com/LibraryOfCongress/data-exploration/blob/master/IIIF.ipynb)." align="center" color="success" %}
+
+# Other simple APIs to try
+
+Some free, GET APIs:
+
+- Fandom: [PokéAPI](https://pokeapi.co/) or [Star Wars API](https://swapi.co/)
+- Trivia questions: [jService](http://jservice.io/) or [Open Trivia Database](https://opentdb.com/api_config.php)
+- [Fun Translations API](https://funtranslations.com/api)
+- [NumbersAPI](http://numbersapi.com/)
+- [ip2country](https://ip2country.info/)
+- [Geocode.xyz](https://geocode.xyz/api)
