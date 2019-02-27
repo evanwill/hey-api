@@ -91,14 +91,4 @@ Combine the parameters with `&` and let's see what we get:
 
 After retrieving a batch of data, we could parse the JSON to analyse or use it to form a new batch of queries.
 
-# Others
-
-There are many other APIs of this type.
-However, most will require a developer key to authenticate your requests. 
-The service may still be free, the key is just used to avoid spamming and over use of the resource.
-
-- [MapQuest API](https://developer.mapquest.com/)
-- [Google Maps APIs](https://developers.google.com/maps/documentation/api-picker)
-- [Twitter API](https://developer.twitter.com/en/docs)
-- [NYTimes API](https://developer.nytimes.com/)
-- [oEmbed](https://oembed.com/) standard
+{% include alert.md text="If ChronAm seems interesting, try out the [Library of Congress JSON API](https://libraryofcongress.github.io/data-exploration/index.html) or [LOC IIIF API](https://github.com/LibraryOfCongress/data-exploration/blob/master/IIIF.ipynb)." align="center" color="success" %}
