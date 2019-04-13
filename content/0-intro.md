@@ -34,7 +34,7 @@ However, API is a generic term that is used in many different programming contex
 For example:
 
 - Programming languages and libraries ([jQuery API](https://api.jquery.com/))
-- Operating systems (POSIX, WinAPI)
-- Software features
+- Operating systems ([POSIX](https://en.wikipedia.org/wiki/POSIX), [WinAPI](https://en.wikipedia.org/wiki/Windows_API))
+- Software features (Browser APIs)
 
 **Web/Browser APIs**, *confusingly* also often called "Web APIs", are programming interfaces built into web browsers that allow client-side JavaScript (i.e. code in web pages) to interact with their features. Sometimes called the Browser Object Model (BOM), they include APIs such as the [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) and Device APIs (Ambient Light Sensor, Geolocation, Screen Orientation). See the MDN [Web APIs list](https://developer.mozilla.org/en-US/docs/Web/API).

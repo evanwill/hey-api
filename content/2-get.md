@@ -41,7 +41,7 @@ Each parameter has standard options or syntax, gradually building up the exact s
 
 For example, let's use IIIF to access images from the [Psychiana](https://digital.lib.uidaho.edu/digital/collection/psychiana/search) digital collection hosted on [CONTENTdm](https://www.oclc.org/en/contentdm.html).
 
-Parts of the recipe:
+Base of the recipe:
 
 - Our IIIF service is at the base URL `https://cdm17254.contentdm.oclc.org/digital/iiif`
 - The collection name is the "prefix", `/psychiana`
@@ -89,7 +89,7 @@ Combine the parameters with `&` and let's see what we get:
 
 <https://chroniclingamerica.loc.gov/search/pages/results?state=Idaho&date1=1865&date2=1866&dateFilterType=yearRange&sequence=1&sort=date&rows=5&format=json>
 
-After retrieving a batch of data, we could parse the JSON to analyse or use it to form a new batch of queries.
+After retrieving a batch of data, we could parse the JSON to analyze or use it to form a new batch of queries.
 
 {% include alert.md text="If ChronAm seems interesting, try out the [Library of Congress JSON API](https://libraryofcongress.github.io/data-exploration/index.html) or [LOC IIIF API](https://github.com/LibraryOfCongress/data-exploration/blob/master/IIIF.ipynb)." align="center" color="success" %}
 
