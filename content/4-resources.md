@@ -16,6 +16,7 @@ Most APIs will require a developer key to authenticate your requests.
 The service may still be free, the key is just used to avoid spamming and over use of the resource.
 
 - [Huge List of Free APIs](https://apipheny.io/free-api/) from apipheny
+- [SpaceTraders API](https://spacetraders.io/) multiplayer game via API
 - [MapQuest API](https://developer.mapquest.com/)
 - [Google Maps APIs](https://developers.google.com/maps/documentation/api-picker)
 - [Twitter API](https://developer.twitter.com/en/docs)
